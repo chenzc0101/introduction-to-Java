@@ -1,0 +1,23 @@
+public class FindMinMaxPositive {
+    public static void main(String[] args) {
+        
+        // see README.pdf for problem description and instructions.
+        
+        int max=0;
+        int min=10000;
+        while (!StdIn.isEmpty())
+       
+        {int number = StdIn.readInt();
+            
+          {if (number >0) 
+             {
+                if (number>max) max=number;
+                if (number<min) min=number;
+             }
+            else StdOut.println("Please enter a positive integer");
+          }
+        }
+        StdOut.println("maximum  = "+max+ ", minimum = "+min);
+ 
+    }
+}
